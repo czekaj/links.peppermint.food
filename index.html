@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peppermint.food | Powering Nutrition Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        peppermint: {
+                            light: '#E8F5E9',
+                            DEFAULT: '#4CAF50',
+                            dark: '#388E3C',
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-peppermint-light to-white min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-md">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-peppermint mb-2">Peppermint.food</h1>
+            <p class="text-xl text-gray-600">Powering Nutrition Intelligence</p>
+        </header>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Welcome, HLTH 2024 Attendee!</h2>
+            <p class="text-gray-600 mb-4">
+                I'm Lucas Czekaj, founder of Peppermint.food. We're revolutionizing personalized nutrition through AI and data analytics. Explore below to learn more about our mission.
+            </p>
+        </div>
+        
+        <div class="space-y-4">
+            <a href="https://www.peppermint.food" class="block bg-peppermint hover:bg-peppermint-dark text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
+                Discover Peppermint.food
+            </a>
+            <a href="https://www.peppermint.engineering" class="block bg-white hover:bg-gray-100 text-peppermint font-bold py-3 px-4 rounded-lg border-2 border-peppermint transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
+                Explore Our Technology
+            </a>
+            <a href="https://www.linkedin.com/in/yourprofile" class="block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
+                Connect on LinkedIn
+            </a>
+            <a href="https://calendly.com/yourname" class="block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
+                Schedule a Demo
+            </a>
+            <a href="https://peppermint.food/whitepaper.pdf" class="block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
+                Download Our Whitepaper
+            </a>
+        </div>
+        
+        <footer class="mt-8 text-center text-gray-600 text-sm">
+            &copy; 2024 Peppermint.food | Nutrition Platform
+        </footer>
+    </div>
+    
+    <!-- Google Analytics script -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-ANALYTICS-ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR-ANALYTICS-ID');
+        
+        function trackClick(linkName) {
+            gtag('event', 'click', {
+                'event_category': 'outbound',
+                'event_label': linkName,
+                'transport_type': 'beacon'
+            });
+        }
+    </script>
+</body>
+</html>
