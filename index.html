@@ -28,55 +28,66 @@
 <body class="bg-gradient-to-br from-peppermint-light to-white min-h-screen">
     <div class="container mx-auto px-4 py-8 max-w-md">
         <header class="text-center mb-8">
-            <h1 class="text-4xl font-bold text-peppermint mb-2">Peppermint.food</h1>
+            <h1 class="text-4xl font-bold text-peppermint mb-2">Peppermint 🌱</h1>
             <p class="text-xl text-gray-600">Powering Nutrition Intelligence</p>
         </header>
         
         <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
-            <h2 class="text-2xl font-semibold mb-4">Welcome, HLTH 2024 Attendee!</h2>
-            <p class="text-gray-600 mb-4">
-                I'm Lucas Czekaj, founder of Peppermint.food. We're revolutionizing personalized nutrition through AI and data analytics. Explore below to learn more about our mission.
+            <h2 id="welcome-title" class="text-xl font-semibold mb-4">Welcome!</h2>
+            <p id="welcome-message" class="text-gray-600 mb-4">
+                I'm Lucas Czekaj, founder of Peppermint. We're revolutionizing personalized nutrition through AI and data analytics. Explore below to learn more about our mission.
             </p>
         </div>
         
         <div class="space-y-4">
             <a href="https://www.peppermint.food" class="block bg-peppermint hover:bg-peppermint-dark text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
-                Discover Peppermint.food
+                Discover Peppermint
             </a>
-            <a href="https://www.peppermint.engineering" class="block bg-white hover:bg-gray-100 text-peppermint font-bold py-3 px-4 rounded-lg border-2 border-peppermint transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
-                Explore Our Technology
+            <a href="https://www.linkedin.com/in/lukaszczekaj" class="block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center flex items-center justify-center">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                </svg>
+                Connect with Founder
             </a>
-            <a href="https://www.linkedin.com/in/yourprofile" class="block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
-                Connect on LinkedIn
-            </a>
-            <a href="https://calendly.com/yourname" class="block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
+            <a href="https://cal.com/peppermint" class="block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
                 Schedule a Demo
             </a>
-            <a href="https://peppermint.food/whitepaper.pdf" class="block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
-                Download Our Whitepaper
+            <a href="" class="block bg-gray-200 font-bold hover:bg-gray-300 text-gray-800 py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
+                Fill Out Our Survey (+early access 🎁)
             </a>
         </div>
         
         <footer class="mt-8 text-center text-gray-600 text-sm">
-            &copy; 2024 Peppermint.food | Nutrition Platform
+            &copy; 2024 <a href="https://peppermint.engineering">Peppermint Engineering</a>
         </footer>
     </div>
     
     <!-- Google Analytics script -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-ANALYTICS-ID"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5W2B6DQG25"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5W2B6DQG25');
+</script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'YOUR-ANALYTICS-ID');
-        
-        function trackClick(linkName) {
-            gtag('event', 'click', {
-                'event_category': 'outbound',
-                'event_label': linkName,
-                'transport_type': 'beacon'
-            });
+        function updateWelcomeMessage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            const welcomeTitle = document.getElementById('welcome-title');
+            const welcomeMessage = document.getElementById('welcome-message');
+            
+            if (urlParams.has('hlth2024')) {
+                welcomeTitle.textContent = 'Welcome, HLTH 2024 Innovator!';
+                welcomeMessage.innerHTML = "<p>I'm Lucas Czekaj, founder of Peppermint 👋</p><br /><p>We're pioneering the field of nutrition intelligence through AI-powered analysis of your grocery shopping habits. We're making high-quality nutrition personal and effortless.</p><br /><p>Let's connect and explore the future of health tech together! 🚀</p>";
+            }
+            // Add more event-specific messages as needed
         }
+        
+        // Call the function when the page loads
+        window.onload = updateWelcomeMessage;
     </script>
 </body>
 </html>
