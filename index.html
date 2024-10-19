@@ -21,6 +21,7 @@
                             700: '#047857',
                             800: '#065f46',
                             900: '#064e3b',
+                            950: '#022c22',
                         },
                     },
                 },
@@ -32,16 +33,16 @@
         body { font-family: 'Poppins', sans-serif; }
     </style>
 </head>
-<body class="bg-gradient-to-br from-peppermint-900 to-peppermint-700 min-h-screen">
+<body class="bg-gradient-to-br from-peppermint-950 to-peppermint-950 min-h-screen">
     <div class="container mx-auto px-0 py-8 max-w-md">
         <header class="text-center mb-6">
-            <h1 class="text-4xl font-bold text-white mb-2">Peppermint 🌱</h1>
-            <p class="text-xl text-white">Powering Nutrition Intelligence</p>
+            <h1 class="text-3xl font-bold text-white mb-2">Peppermint 🌱</h1>
+            <p class="text-md text-white font-light">Powering <span class="text-peppermint-400">Nutrition</span> Intelligence</p>
         </header>
         
-        <div class="bg-white rounded-lg shadow-lg px-6 py-4 pb-1 mb-4 ml-2 mr-2">
-            <h2 id="welcome-title" class="text-xl font-semibold mb-4">Welcome!</h2>
-            <p id="welcome-message" class="text-gray-600 mb-4 text-sm">
+        <div class="bg-gradient-to-br from-peppermint-900 to-peppermint-950 rounded-lg shadow-lg px-6 py-4 pb-1 mb-4 ml-4 mr-4">
+            <h2 id="welcome-title" class="text-white text-xl font-semibold mb-4">Welcome!</h2>
+            <p id="welcome-message" class="text-white mb-4 text-sm">
                 I'm Lucas Czekaj, founder of Peppermint. We're revolutionizing personalized nutrition through AI and grocery data analytics. Explore below to learn more about our mission.
             </p>
         </div>
@@ -66,13 +67,13 @@
                 </svg>
                 Contact Us
             </a>
-            <a href="#" class="block bg-gray-200 font-bold hover:bg-gray-300 text-gray-400 py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
+            <!-- <a href="#" class="block bg-gray-200 font-bold hover:bg-gray-300 text-gray-400 py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
                 Fill Out Our Survey (+early access 🎁)
-            </a>
+            </a> -->
         </div>
         
-        <footer class="mt-8 text-center text-gray-600 text-sm">
-            &copy; 2024 <a href="https://peppermint.engineering">Peppermint Engineering</a>
+        <footer class="mt-8 text-center text-peppermint-100 text-xs">
+            &copy; 2024 <a href="https://peppermint.engineering">Peppermint Engineering, Inc.</span></a>
         </footer>
     </div>
     
@@ -96,13 +97,13 @@
             if (urlParams.has('hlth2024')) {
                 welcomeTitle.textContent = 'Welcome, HLTH 2024 Innovator!';
                 welcomeMessage.innerHTML = `
-                    <p>I'm Lucas Czekaj, founder of Peppermint 👋</p>
+                    <p>I'm Lucas Czekaj, founder and CEO of Peppermint 👋</p>
                     <div class="flex justify-center my-4">
                         <img src="avatar.jpg" alt="Lucas Czekaj" class="w-24 h-24 rounded-full object-cover border-0 border-peppermint">
                     </div>
-                    <p>We're pioneering the field of nutrition intelligence through AI-powered analysis of your grocery shopping habits. We're making high-quality nutrition personal and effortless.</p>
+                    <p>We're making nutrition intelligence effortless through AI analysis of your grocery habits.</p>
                     <br />
-                    <p>Let's connect and explore the future of health tech together! 🚀</p>
+                    <p>Let's explore the future of health tech together! 🚀</p>
                 `;
             }
             // Add more event-specific messages as needed
