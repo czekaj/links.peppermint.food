@@ -11,9 +11,16 @@
                 extend: {
                     colors: {
                         peppermint: {
-                            light: '#E8F5E9',
-                            DEFAULT: '#4CAF50',
-                            dark: '#388E3C',
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',  // emerald-400
+                            500: '#09a971',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
                         },
                     },
                 },
@@ -25,32 +32,39 @@
         body { font-family: 'Poppins', sans-serif; }
     </style>
 </head>
-<body class="bg-gradient-to-br from-peppermint-light to-white min-h-screen">
+<body class="bg-gradient-to-br from-peppermint-900 to-peppermint-700 min-h-screen">
     <div class="container mx-auto px-0 py-8 max-w-md">
         <header class="text-center mb-6">
-            <h1 class="text-4xl font-bold text-peppermint mb-2">Peppermint 🌱</h1>
-            <p class="text-xl text-gray-600">Powering Nutrition Intelligence</p>
+            <h1 class="text-4xl font-bold text-white mb-2">Peppermint 🌱</h1>
+            <p class="text-xl text-white">Powering Nutrition Intelligence</p>
         </header>
         
-        <div class="bg-white rounded-lg shadow-lg px-6 py-4 pb-1 mb-4">
+        <div class="bg-white rounded-lg shadow-lg px-6 py-4 pb-1 mb-4 ml-2 mr-2">
             <h2 id="welcome-title" class="text-xl font-semibold mb-4">Welcome!</h2>
             <p id="welcome-message" class="text-gray-600 mb-4 text-sm">
-                I'm Lucas Czekaj, founder of Peppermint. We're revolutionizing personalized nutrition through AI and data analytics. Explore below to learn more about our mission.
+                I'm Lucas Czekaj, founder of Peppermint. We're revolutionizing personalized nutrition through AI and grocery data analytics. Explore below to learn more about our mission.
             </p>
         </div>
         
         <div class="space-y-4 px-4">
-            <a href="https://www.peppermint.food" class="block bg-peppermint hover:bg-peppermint-dark text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
-                Discover Peppermint
+            <a href="https://www.peppermint.engineering" class="block bg-peppermint-500 hover:bg-peppermint-400 text-white font-semibold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center flex items-center justify-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+                Discover the Peppermint Platform
             </a>
-            <a href="https://www.linkedin.com/in/lukaszczekaj" class="block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center flex items-center justify-center">
+            <a href="https://www.linkedin.com/in/lukaszczekaj" class="block bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center flex items-center justify-center">
                 <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
                 </svg>
                 Connect with Lucas
             </a>
-            <a href="https://cal.com/peppermint/30-min-platform-demo" class="block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
-                Schedule a Demo
+            <a href="https://cal.com/peppermint/30-min-platform-demo" class="block bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center flex items-center justify-center">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                </svg>
+                Contact Us
             </a>
             <a href="#" class="block bg-gray-200 font-bold hover:bg-gray-300 text-gray-400 py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-center">
                 Fill Out Our Survey (+early access 🎁)
